@@ -3,7 +3,6 @@
 # Currently Supported Operating Systems:
 #   Ubuntu
 
-LOG_FILE="./logs/Surge-Panel.log"
 
 loading() {
     width=120
@@ -50,6 +49,8 @@ echo "        \::/    /                \::/____/                !:!   !         
 echo "         \/____/                  ~~                       !!___!                                            \/____/          "
 loading
 
+nano ./logs/Surge-Panel.log
+LOG_FILE="./logs/Surge-Panel.log"
 # Am I root? With Prompt
 if [ "$(id -u)" != "0" ]; then
     echo 'This script is recommended to be run as root.'
